@@ -1,0 +1,39 @@
+/* MOBILE FIRST */
+$dark-violet: hsl(256, 26%, 20%);
+$grayish-blue: hsl(216, 30%, 68%);
+$very-dark-violet: hsl(270, 9%, 17%);
+$dark-grayish-violet: hsl(273, 4%, 51%);
+$very-light-gray: hsl(0, 0%, 98%);
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+  
+html{
+  font-size: 62.5%;
+  font-family: DM Display Serif, Karla, sans-serif;
+}
+
+@mixin flexCenter($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+@mixin hoverFocus {
+  background: #fff;
+  color: #2b272f;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+@import './header';
+@import './banner';
+@import './about';
+@import './footer';
